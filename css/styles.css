@@ -1,0 +1,212 @@
+:root{
+  --primary-title-color: #ffffff;
+  --secondary-title-color: #212121;
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --third-text-color: #ffffff;
+  --accent-color: #2196f3;
+}
+body {
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+/*========servises=====*/
+.link{
+  text-decoration: none;
+  font-family: inherit  
+}
+.list{
+list-style: none;
+}
+.btn {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+.logo{
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-color);
+}
+.logo:hover,
+.logo:focus{
+  font-family: "Raleway", sans-serif
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--accent-color);
+  /* text-decoration: underline; */
+}
+.footer-link{
+  line-height: 1.71;  /* or 171% */
+}
+.btn-filtr {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62; /* identical to box height, or 162% */
+  text-align: center;
+  color: #212121;
+  cursor: pointer;
+}
+/*========prodact=====*/
+/*========header=====*/
+.logo-header-studio{
+color:var(--secondary-text-color)
+}
+.header-link{
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--secondary-title-color)
+}
+.header-link:hover,
+.header-link:focus,
+.current{
+color: var(--accent-color)
+}
+
+/* .header-link.link.current{
+/* color: var(--primary-text-color); */
+text-decoration: underline;
+} */
+
+.header-kontacts{
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+/* color: var(--primary-text-color); */
+}
+.header-kontacts:hover,
+.header-kontacts:focus{
+color: var(--accent-color);
+}
+
+.header-kontacts-link{
+font-weight: 500;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--primary-text-color)
+}
+.header-kontacts-link:hover,
+.header-kontacts-link:focus{
+color: var(--accent-color)
+}
+/*========hero=====*/
+
+.hero{
+  background: #2F303A;
+
+}
+.hero-title{
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;  /* or 136% */
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-title-color);
+}
+.hero-btn {
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
+}
+.hero-btn:hover {
+    color: var(--third-text-color);
+    background: #188CE8;
+}
+/*========= ПОЧЕМУ МЫ ===========*/
+.whyus-item-header{
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--secondary-title-color);
+}
+.whyus-item-text{
+  line-height: 1.71;   /* or 171% */
+  /* color: var(--primary-text-color); */
+}
+/*======== Чем мы занимаемся ==========*/
+.ourteam-title,
+.wedoing-title{
+font-weight: 700;
+font-size: 36px;
+line-height: calc(42 / 36);
+/* text-align: center; */
+color: var(--secondary-title-color);
+}
+/*======== НАША КОМАНДА ==========*/
+.ourteam-item-title{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  color: var(--secondary-title-color);
+}
+.ourteam-item-text{
+font-size: 16px;
+line-height: calc(19 / 16);
+text-align: center;
+/* color: var(--primary-text-color); */
+}
+/*======== ФУТЕР ==========*/
+.footer{
+  background: #2F303A;
+}
+.footer-contact{
+  font-style: inherit;
+}
+.address{
+color: var(--third-text-color);
+}
+
+.address:hover,
+.address:focus{
+color: var(--accent-color);
+}
+.contact{
+  color: rgba(255, 255, 255, 0.6);
+}
+.contact:hover,
+.contact:focus{
+  color: var(--accent-color);
+}
+.logo-footer-studio{
+  color:var(--primary-title-color)
+}
+/*======== ФИЛЬТР ==========*/
+.filtr-btn:hover,
+.filtr-btn:focus,
+.current-btn{
+    color: var(--third-text-color);
+    background-color: var(--accent-color);
+}
+.filtr-btn {
+    color: var(--secondary-text-color);
+    background: var(--third-text-color);
+}
+/*======== ПОРТОФОЛИО ==========*/
+.portofolio-item-title{
+font-weight: 700;
+font-size: 18px;
+line-height: 2.00;/* identical to box height, or 200% */
+letter-spacing: 0.06em;
+color: var(--secondary-title-color);
+}
+
+.portofolio-item-text{
+font-size: 16px;
+line-height: 1.87; /* identical to box height, or 187% */
+color: var(--primary-text-color);
+}
