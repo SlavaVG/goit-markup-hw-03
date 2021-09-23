@@ -40,6 +40,8 @@ list-style: none;
   padding-right: 15px;     
 }
 .btn {
+    width: 200px;
+    height: 50px;
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -47,6 +49,7 @@ list-style: none;
     text-align: center;
     letter-spacing: 0.06em;
     cursor: pointer;
+    border-radius: 4px;
 }
 .logo{
   font-family: "Raleway", sans-serif;
@@ -78,6 +81,10 @@ list-style: none;
 }
 /*========prodact=====*/
 /*========header=====*/
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-container{
 display: flex;
 align-items: center;
@@ -88,7 +95,7 @@ align-items: center;
 }
 .header-list{
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 .header-kontacts-flex{
   display: flex;
