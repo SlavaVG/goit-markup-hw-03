@@ -6,6 +6,17 @@
   --third-text-color: #ffffff;
   --accent-color: #2196f3;
 }
+p, h1, h2, h3, h4, h5, h6{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding-left: 0;
+}
+img{
+  display: block;
+}
+
 body {
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Roboto', sans-serif;
@@ -21,6 +32,12 @@ body {
 }
 .list{
 list-style: none;
+}
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;     
 }
 .btn {
     font-family: inherit;
@@ -61,6 +78,28 @@ list-style: none;
 }
 /*========prodact=====*/
 /*========header=====*/
+.header-container{
+display: flex;
+align-items: center;
+}
+.header-navigation{
+display: flex;
+align-items: center;
+}
+.header-list{
+  display: flex;
+  align-items: center;
+}
+.header-kontacts-flex{
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.logo-flex{
+  display: block;
+  display: flex;
+  margin-right: 93px;
+}
 .logo-header-studio{
 color:var(--secondary-text-color)
 }
@@ -75,11 +114,9 @@ color: var(--secondary-title-color)
 .current{
 color: var(--accent-color)
 }
-
-/* .header-link.link.current{
-/* color: var(--primary-text-color); */
-text-decoration: underline;
-} */
+.header-item:not(:last-child){
+  margin-right: 50px;
+}
 
 .header-kontacts{
 font-weight: 500;
@@ -102,6 +139,10 @@ color: var(--primary-text-color)
 .header-kontacts-link:focus{
 color: var(--accent-color)
 }
+.header-kontacts-item:not(:last-child){
+  margin-right: 50px;
+}
+
 /*========hero=====*/
 
 .hero{
