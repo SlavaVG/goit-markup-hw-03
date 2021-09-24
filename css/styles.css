@@ -289,6 +289,16 @@ margin-bottom: 9px;
 
 }
 /*======== ФИЛЬТР ==========*/
+.portofolio-hero{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filtr-list{
+display: flex;
+}
+
+
+
 .filtr-btn:hover,
 .filtr-btn:focus,
 .current-btn{
