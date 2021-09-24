@@ -306,18 +306,17 @@ margin-bottom: 9px;
 .filtr-list{
   /* width: 611px; */
     display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   /* margin: 0 auto;  */
   margin-bottom: 50px;
 }
 .filtr-item{
-  /* display: inline-block */
-  /* flex-basis: calc(100% / 5 - 8px); */
-  justify-content:center
-  align-content:center
-  /* width: calc((100% - 90px) / 3); */
+  display: inline-block
+  flex-basis: calc(100% / 5 - 8px);
+  /* justify-content:center */
+  /* align-content:center */
   /* margin-right: 28px; */
-   margin-right: -8px;
+   margin-right: 8px;
 }
 
 
