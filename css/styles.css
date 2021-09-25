@@ -5,6 +5,7 @@
   --secondary-text-color: #212121;
   --third-text-color: #ffffff;
   --accent-color: #2196f3;
+  --filter-button-color: #F5F4FA;
 }
 p, h1, h2, h3, h4, h5, h6{
   margin: 0;
@@ -16,7 +17,9 @@ ul{
 img{
   display: block;
 }
-
+button{
+border-width: 0;
+}
 body {
   /* font-family: 'Raleway', sans-serif; */
   font-family: 'Roboto', sans-serif;
@@ -52,7 +55,6 @@ body {
 .btn {
     width: 200px;
     height: 50px;
-    p
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -89,6 +91,10 @@ body {
   text-align: center;
   color: #212121;
   cursor: pointer;
+  display: inline-block;
+  padding: 6px 22px;
+  margin-bottom: 1px;
+    border-radius: 4px;
 }
 /*========prodact=====*/
 /*========header=====*/
@@ -135,7 +141,6 @@ color: var(--accent-color)
 .header-item:not(:last-child){
   margin-right: 50px;
 }
-
 .header-kontacts{
 font-weight: 500;
 line-height: 1.14;
@@ -146,7 +151,6 @@ letter-spacing: 0.02em;
 .header-kontacts:focus{
 color: var(--accent-color);
 }
-
 .header-kontacts-link{
 font-weight: 500;
 line-height: 1.14;
@@ -160,9 +164,7 @@ color: var(--accent-color)
 .header-kontacts-item:not(:last-child){
   margin-right: 50px;
 }
-
 /*========hero=====*/
-
 .hero{
   background: #2F303A;
   padding-top: 200px;
@@ -281,7 +283,7 @@ color: var(--third-text-color);
 }
 .address:hover,
 .address:focus{
-color: var(--accent-color);
+color: var(--accent-color);last
 }
 .contact{
   color: rgba(255, 255, 255, 0.6);
@@ -296,7 +298,6 @@ color: var(--accent-color);
 .footer-item,
 .footer-link:not(:last-child){
 margin-bottom: 9px;
-
 }
 /*======== ФИЛЬТР ==========*/
 .portofolio-hero{
@@ -304,22 +305,15 @@ margin-bottom: 9px;
   padding-bottom: 94px;
 }
 .filtr-list{
-  /* width: 611px; */
-    display: flex;
+  display: flex;
   flex-wrap: wrap;
-  /* margin: 0 auto;  */
+  justify-content: center;
   margin-bottom: 50px;
+  margin-right: -8px;
 }
-.filtr-item{
-  display: inline-block
-  flex-basis: calc(100% / 5 - 8px);
-  /* justify-content:center */
-  /* align-content:center */
-  /* margin-right: 28px; */
-   margin-right: 8px;
+.filtr-item:not(:last-child){
+  margin-right: 8px;
 }
-
-
 
 .filtr-btn:hover,
 .filtr-btn:focus,
@@ -329,7 +323,7 @@ margin-bottom: 9px;
 }
 .filtr-btn {
     color: var(--secondary-text-color);
-    background: var(--third-text-color);
+    background: var(--filter-button-color);
 }
 /*======== ПОРТОФОЛИО ==========*/
 .portofolio-list{
