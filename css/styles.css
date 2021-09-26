@@ -103,16 +103,16 @@ body {
   padding-bottom: 25px;
 }
 .header-container{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header-navigation{
-display: flex;
-align-items: center;
+  display: flex;
+  align-items: center;
 }
 .header-list{
   display: flex;
-  /* align-items: center; */
+  align-items: center;
 }
 .header-kontacts-flex{
   display: flex;
@@ -152,9 +152,6 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 }
 .header-kontacts-link{
-font-weight: 500;
-line-height: 1.14;
-letter-spacing: 0.02em;
 color: var(--primary-text-color)
 }
 .header-kontacts-link:hover,
