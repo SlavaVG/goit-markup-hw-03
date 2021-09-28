@@ -6,6 +6,9 @@
   --third-text-color: #ffffff;
   --accent-color: #2196f3;
   --filter-button-color: #F5F4FA;
+  --border-color: #ECECEC;
+  --hero-grount: #2F303A;
+  --hero-button: #188CE8;
 }
 p, h1, h2, h3, h4, h5, h6{
   margin: 0;
@@ -52,6 +55,10 @@ body {
   padding-left: 15px;
   padding-right: 15px;     
 }
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
 .btn {
     width: 200px;
     height: 50px;
@@ -93,15 +100,14 @@ body {
   cursor: pointer;
   display: inline-block;
   padding: 6px 22px;
-  margin-bottom: 1px;
-    border-radius: 4px;
+  border-radius: 4px;
 }
 /*========prodact=====*/
 /*========header=====*/
 .header{
-  padding-top: 24px;
-  padding-bottom: 25px;
-  border: 1px solid #ECECEC;
+  /* padding-top: 24px; */
+  /* padding-bottom: 25px; */
+  border-bottom: 1px solid var(--border-color);
 }
 .header-container{
   display: flex;
@@ -129,6 +135,9 @@ body {
   color:var(--secondary-text-color)
 }
 .header-link{
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -154,7 +163,7 @@ body {
 }
 /*========hero=====*/
 .hero{
-  background: #2F303A;
+  background: var(--hero-grount);
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -181,12 +190,10 @@ body {
 }
 .hero-btn:hover {
   color: var(--third-text-color);
-  background: #188CE8;
+  background: var(--hero-button);
 }
 /*========= ПОЧЕМУ МЫ ===========*/
 .whyus{
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .whyus-container{
   display: flex;
@@ -196,15 +203,15 @@ body {
 .wedoing-list{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .wedoing-item,
 .ourteam-item,
 .whyus-item{
   flex-basis: calc(100% / 4 - 30px);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .whyus-item-header{
   font-weight: 700;
@@ -221,7 +228,6 @@ body {
 /*======== Чем мы занимаемся ==========*/
 .wedoing{
   padding-top: 0px;
-  padding-bottom: 94px;
 }
 .ourteam-title,
 .wedoing-title{
@@ -234,10 +240,14 @@ body {
 }
 /*======== НАША КОМАНДА ==========*/
 .ourteam{
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background: var(--filter-button-color);
 }
-
+.ourteam-card{
+  background: #FFFFFF;
+/* material shadow v1 */
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 0px 0px 4px 4px;
+}
 .ourteam-item-title{
   font-weight: 500;
   font-size: 16px;
@@ -288,42 +298,38 @@ margin-bottom: 9px;
 }
 /*======== ФИЛЬТР ==========*/
 .portofolio-hero{
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 .filtr-list{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 50px;
-  margin-right: -8px;
 }
 .filtr-item:not(:last-child){
   margin-right: 8px;
-}
-
-.filtr-btn:hover,
-.filtr-btn:focus,
-.current-btn{
-  color: var(--third-text-color);
-  background-color: var(--accent-color);
 }
 .filtr-btn {
   color: var(--secondary-text-color);
   background: var(--filter-button-color);
 }
+/* .carrent-btn, */
+.filtr-btn:hover,
+.filtr-btn:focus{
+  color: var(--third-text-color);
+  background-color: var(--accent-color);
+}
 /*======== ПОРТОФОЛИО ==========*/
 .portofolio-list{
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .portofolio-item{
   flex-basis: calc(100% / 3 - 30px);
   /* width: calc((100% - 90px) / 3); */
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 }
 .portofolio-item-title{
   font-weight: 700;
