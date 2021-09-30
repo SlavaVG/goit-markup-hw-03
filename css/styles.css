@@ -317,7 +317,6 @@ margin-bottom: 9px;
   color: var(--secondary-text-color);
   background: var(--filter-button-color);
 }
-/* .carrent-btn, */
 .filtr-btn:hover,
 .filtr-btn:focus,
 .carrent-btn{
